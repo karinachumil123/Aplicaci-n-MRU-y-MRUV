@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Movimiento Rectilíneo Uniforme y Uniformemente Variado</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mru.html">MRU</a></li>
+                <li><a href="mruv.html">MRUV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mru">
+            <h2>Movimiento Rectilíneo Uniforme (MRU)</h2>
+            <p>El movimiento rectilíneo uniforme (MRU) describe el desplazamiento de un objeto en una sola 
+                dirección con una velocidad constante en una determinada distancia.<br>
+                En física, el MRU puede ser observado dentro de un plano, en un eje de coordenadas, donde el 
+                movimiento es en línea recta desplazándose hacia una dirección. Es uniforme porque las variables 
+                de velocidad y tiempo en la recta son constantes. <br>
+                Las fórmulas del MRU contemplan tres incógnitas: Velocidad constante (V), Distancia (d) y Tiempo (t).</p>
+            <img src="images/mru1.png" alt="Descripción de MRU"><br><br>
+            
+            <!-- Formulario de MRU -->
+            <div class="form-container">
+                <h3>Cálculo de Velocidad</h3>
+                <p>
+                    La velocidad en MRU es constante y se obtiene dividiendo la distancia recorrida (d) entre el tiempo (t) que se emplea 
+                    en recorrerla. <br>La fórmula es: 𝑣 = 𝑑/𝑡
+                </p>
+                <form id="mru-velocidad-form">
+                    <label for="distancia">Distancia (m):</label>
+                    <input type="number" id="distancia" name="distancia" required><br><br>
+                    
+                    <label for="tiempo">Tiempo (s):</label>
+                    <input type="number" id="tiempo" name="tiempo" required><br><br>
+                    
+                    <button type="submit">Calcular Velocidad</button>
+                </form>
+                <p>Resultado: <span id="resultado-velocidad"></span></p>
+            </div><br><br>
+
+            <div class="form-container">
+                <h3>Cálculo de Distancia</h3>
+                <p>
+                    La distancia recorrida se calcula multiplicando la velocidad constante (v) por el tiempo (t) que dura el movimiento. 
+                    <br>La fórmula es: 𝑑 = 𝑣*𝑡
+                </p>
+                <form id="mru-distancia-form">
+                    <label for="velocidad-mru">Velocidad (m/s):</label>
+                    <input type="number" id="velocidad-mru" name="velocidad-mru" required><br><br>
+                    
+                    <label for="tiempo-mru">Tiempo (s):</label>
+                    <input type="number" id="tiempo-mru" name="tiempo-mru" required><br><br>
+                    
+                    <button type="submit">Calcular Distancia</button>
+                </form>
+                <p>Resultado: <span id="resultado-distancia"></span></p>
+            </div><br><br>
+            
+            <div class="form-container">
+                <h3>Cálculo de Tiempo</h3>
+                <p>El tiempo que toma recorrer una distancia a velocidad constante se obtiene dividiendo la distancia (d) entre la 
+                    velocidad (v). <br>La fórmula es: 𝑡 = 𝑑/𝑣
+                    </p>
+                <form id="mru-tiempo-form">
+                    <label for="distancia-mru">Distancia (m):</label>
+                    <input type="number" id="distancia-mru" name="distancia-mru" required><br><br>
+                    
+                    <label for="velocidad-mru-tiempo">Velocidad (m/s):</label>
+                    <input type="number" id="velocidad-mru-tiempo" name="velocidad-mru-tiempo" required><br><br>
+                    
+                    <button type="submit">Calcular Tiempo</button>
+                </form>
+                <p>Resultado: <span id="resultado-tiempo"></span></p>
+            </div><br><br>
+            <img src="images/mru2.png" alt="Descripción de MRU 2">
+            
+        </div>
+    </main>
+    <footer>
+        <p>Estudiante: Gela Karina Antonia Chumil Cosiguá - Carnet: 2290-20-13606</p>
+    </footer>
+
+    <script src="js/mru.js"></script>
+</body>
+</html>

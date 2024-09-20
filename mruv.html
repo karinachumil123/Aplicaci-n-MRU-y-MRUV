@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Movimiento Rectilíneo Uniforme y Uniformemente Variado</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mru.html">MRU</a></li>
+                <li><a href="mruv.html">MRUV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mruv">
+            <h2>Movimiento Rectilíneo Uniformemente Variado (MRUV)</h2>
+            <p>
+                El Movimiento Rectilíneo Uniformemente Variado (MRUV) es un tipo de movimiento en el que un 
+                objeto se mueve en línea recta con una aceleración constante. La velocidad del objeto cambia 
+                uniformemente a lo largo del tiempo. La aceleración puede ser positiva o negativa, lo que indica 
+                un aumento o disminución en la velocidad. <br> La fórmula principal del MRUV es v = u + at, donde 
+                v es la velocidad final, u es la velocidad inicial, a es la aceleración y t es el tiempo. <br> El MRUV 
+                se utiliza para describir fenómenos como la caída libre y el movimiento de vehículos con aceleración 
+                constante. En gráficos, el MRUV se representa como una línea recta en el gráfico de velocidad 
+                versus tiempo.    
+            </p>
+            <img src="images/mruv1.jpg" alt="Descripción de MRUV"><br><br>
+            
+            <!-- Formulario de MRUV -->
+            <div class="form-container">
+                <h3>Cálculo de Aceleración</h3>
+                <p>
+                    La aceleración en el MRUV es constante y se define como el cambio de velocidad (Δv) dividido entre el tiempo (t) 
+                    que tarda en ocurrir dicho cambio. <br>La fórmula es: a = (Vf - Vo) / t
+                </p>
+                <form id="mruv-aceleracion-form">
+                    <label for="velocidad-inicial">Velocidad Inicial (m/s):</label>
+                    <input type="number" id="velocidad-inicial" name="velocidad-inicial" required><br><br>
+                    
+                    <label for="velocidad-final">Velocidad Final (m/s):</label>
+                    <input type="number" id="velocidad-final" name="velocidad-final" required><br><br>
+                    
+                    <label for="tiempo-mruv">Tiempo (s):</label>
+                    <input type="number" id="tiempo-mruv" name="tiempo-mruv" required><br><br>
+                    
+                    <button type="submit">Calcular Aceleración</button>
+                </form>
+                <p>Resultado: <span id="resultado-aceleracion"></span></p>
+            </div><br><br>
+
+            <div class="form-container">
+                <h3>Cálculo de Velocidad Final</h3>
+                <p>
+                    La velocidad final se obtiene sumando la velocidad inicial (v_i) con el producto de la aceleración (a) y el tiempo (t). 
+                    <br>La fórmula es: Vf = Vo + a * t
+                </p>
+                <form id="mruv-velocidad-final-form">
+                    <label for="velocidad-inicial-mruv">Velocidad Inicial (m/s):</label>
+                    <input type="number" id="velocidad-inicial-mruv" name="velocidad-inicial-mruv" required><br><br>
+                    
+                    <label for="aceleracion-mruv">Aceleración (m/s²):</label>
+                    <input type="number" id="aceleracion-mruv" name="aceleracion-mruv" required><br><br>
+                    
+                    <label for="tiempo-final-mruv">Tiempo (s):</label>
+                    <input type="number" id="tiempo-final-mruv" name="tiempo-final-mruv" required><br><br>
+                    
+                    <button type="submit">Calcular Velocidad Final</button>
+                </form>
+                <p>Resultado: <span id="resultado-velocidad-final"></span></p>
+            </div><br><br>
+            
+            <div class="form-container">
+                <h3>Cálculo de Distancia Recorrida</h3>
+                <p>
+                    La distancia recorrida en MRUV se calcula mediante la fórmula: <br> 
+                    d = ((Vf + Vo) / 2) * t
+                </p>
+                <form id="mruv-distancia-recorrida-form">
+                    <label for="velocidad-inicial-distancia">Velocidad Inicial (m/s):</label>
+                    <input type="number" id="velocidad-inicial-distancia" name="velocidad-inicial-distancia" required><br><br>
+
+                    <label for="velocidad-final-distancia">Velocidad Final (m/s):</label> <!-- ID actualizado -->
+                    <input type="number" id="velocidad-final-distancia" name="velocidad-final-distancia" required><br><br>
+
+                    <label for="tiempo-final1-mruv">Tiempo (s):</label>
+                    <input type="number" id="tiempo-final1-mruv" name="tiempo-final1-mruv" required><br><br>
+
+                    <button type="submit">Calcular Distancia Recorrida</button>
+                </form>
+                <p>Resultado: <span id="resultado-distancia-recorrida"></span></p>
+
+            </div> <br><br>
+            <img src="images/mruv2.jpg" alt="Descripción de MRUV">
+
+    </main>
+    <footer>
+        <p>Estudiante: Gela Karina Antonia Chumil Cosiguá - Carnet: 2290-20-13606</p>
+    </footer>
+
+    <script src="js/mruv.js"></script>
+</body>
+</html>
